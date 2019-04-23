@@ -1,0 +1,20 @@
+Coomon Change to the all the scripts
+    -Made the code more modular and thus achieving reusability.
+    -Parameterized the data,data is now taken from testng.xml
+    -Configuring the path of chromedriver of window such that chromedriver's path will be picked up from current user directory.
+    -Creating a separate Object repository for each test case.
+    -Introduced dynamic wait,wherever necessary.
+    
+    
+TestCase-SignInTest
+    -Removed static wait that was present.
+    -Locators for elements were present inline,so created a separate Object Repository for it.  
+    -When clicking on SignIn button,switch frame was missing.
+
+TestCase-HotelBookingTest
+    -Object repository and the test script were present in same file,so had to separate OR from the test script code.
+    
+TestCase-FlightBookingTest
+    -The locator for destination had wrong case.
+    -Selection of date was quite static,created a function for it so that the date selection was quite dynamic.
+    -Locators for elements were present inline,so created a separate Object Repository for it.  
