@@ -1,4 +1,4 @@
-Coomon Change to the all the scripts
+Common Change to the all the scripts
     -Made the code more modular and thus achieving reusability.
     -Parameterized the data,data is now taken from testng.xml
     -Configuring the path of chromedriver of window such that chromedriver's path will be picked up from current user directory.
